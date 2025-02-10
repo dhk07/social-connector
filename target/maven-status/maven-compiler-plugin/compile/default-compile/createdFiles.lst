@@ -1,0 +1,13 @@
+com\whilter\genai\dto\SocialConnectionDto.class
+com\whilter\genai\controller\UserController.class
+com\whilter\genai\service\CustomUserDetailsService.class
+com\whilter\genai\service\SocialConnectionService.class
+com\whilter\genai\entity\SocialConnection.class
+com\whilter\genai\config\SecurityConfig.class
+com\whilter\genai\entity\User.class
+com\whilter\genai\repository\UserRepository.class
+com\whilter\genai\config\OAuth2LoginSuccessHandler.class
+com\whilter\genai\SocialConnectorApplication.class
+com\whilter\genai\service\UserService.class
+com\whilter\genai\dto\UserDto.class
+com\whilter\genai\repository\SocialConnectionRepository.class

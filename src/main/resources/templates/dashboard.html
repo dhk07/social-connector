@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h2>Welcome, <span th:text="${user.firstName}">User</span>!</h2>
+            <form th:action="@{/logout}" method="post" class="logout-form">
+                <button type="submit" class="btn-logout">Logout</button>
+            </form>
+        </header>
+
+        <div class="content-section">
+            <h3>Social Connections</h3>
+            <table class="social-connections-table">
+                <thead>
+                    <tr>
+                        <th>Sr. No</th>
+                        <th>Social Site</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="connection, stat : ${socialConnections}">
+                        <td th:text="${stat.count}">1</td>
+                        <td>
+                            <span class="social-icon" th:classappend="${connection.provider}">
+                                <i th:class="${'fab fa-' + connection.provider}"></i>
+                                <span th:text="${connection.providerName}">Provider</span>
+                            </span>
+                        </td>
+                        <td>
+                            <span th:if="${connection.connected}" class="status-badge connected">
+                                Linked as <strong th:text="${connection.username}"></strong>
+                            </span>
+                            <a th:unless="${connection.connected}" 
+                               th:href="@{'/oauth2/authorization/' + ${connection.provider}}"
+                               class="btn-link">
+                                Link Account
+                            </a>
+                        </td>
+                        <td>
+                            <a th:if="${connection.connected}"
+                               th:href="@{'/social-data/' + ${connection.provider}}"
+                               class="btn-view">
+                                View Data
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html> 

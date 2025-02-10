@@ -1,0 +1,13 @@
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\service\CustomUserDetailsService.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\repository\SocialConnectionRepository.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\service\SocialConnectionService.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\entity\SocialConnection.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\dto\UserDto.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\config\OAuth2LoginSuccessHandler.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\SocialConnectorApplication.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\repository\UserRepository.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\entity\User.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\controller\UserController.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\dto\SocialConnectionDto.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\service\UserService.java
+C:\Users\racloop\workspace_nonGit\social-connector\src\main\java\com\whilter\genai\config\SecurityConfig.java

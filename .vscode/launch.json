@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SocialConnectorApplication<social-connector>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.whilter.genai.SocialConnectorApplication",
+            "projectName": "social-connector",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

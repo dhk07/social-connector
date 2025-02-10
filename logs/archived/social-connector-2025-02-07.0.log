@@ -1,0 +1,1100 @@
+2025-02-07 15:03:02,566 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 15:03:02,636 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 23336 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 15:03:02,638 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 15:03:02,640 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 15:03:04,187 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 15:03:04,297 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2025-02-07 15:03:05,434 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-02-07 15:03:05,446 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-07 15:03:05,448 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 15:03:05,449 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 15:03:05,532 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 15:03:05,534 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2824 ms
+2025-02-07 15:03:05,778 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 15:03:05,862 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 15:03:05,917 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 15:03:06,280 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 15:03:06,322 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 15:03:06,554 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7de6549d
+2025-02-07 15:03:06,558 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 15:03:06,607 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 15:03:07,820 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 15:03:07,911 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:03:08,343 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 15:03:08,348 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 15:03:08,567 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 15:03:08,589 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 15:03:08,779 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 7 mappings in 'requestMappingHandlerMapping'
+2025-02-07 15:03:08,883 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 15:03:08,892 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 15:03:08,895 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 15:03:08,906 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 15:03:08,917 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 15:03:08,920 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 15:03:08,922 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 15:03:08,922 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 15:03:08,994 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64096a41, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33de9d85, org.springframework.security.web.context.SecurityContextHolderFilter@5bb45afc, org.springframework.security.web.header.HeaderWriterFilter@47f677a4, org.springframework.web.filter.CorsFilter@2f6352a3, org.springframework.security.web.authentication.logout.LogoutFilter@1930e8ef, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@35d4fecf, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1e205025, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ad4ef13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e186006, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@761ea1f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24455d50, org.springframework.security.web.access.ExceptionTranslationFilter@64710a6, org.springframework.security.web.access.intercept.AuthorizationFilter@4b20a8e4]
+2025-02-07 15:03:09,095 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 15:03:09,142 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 15:03:09,322 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-07 15:03:09,348 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2025-02-07 15:03:09,364 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 7.357 seconds (process running for 8.102)
+2025-02-07 15:04:27,963 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-07 15:04:27,965 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-07 15:04:27,966 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-02-07 15:04:27,967 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-07 15:04:27,968 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-02-07 15:04:27,969 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a0eb939
+2025-02-07 15:04:27,970 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@7a0f1f9d
+2025-02-07 15:04:27,971 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-07 15:04:27,973 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 7 ms
+2025-02-07 15:04:28,004 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-1] Securing GET /
+2025-02-07 15:04:28,017 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:04:28,070 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8080-exec-1] Saved request http://localhost:8080/?continue to session
+2025-02-07 15:04:28,075 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8080-exec-1] Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@43d84df1, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-02-07 15:04:28,076 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8080-exec-1] Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@4b8601a1
+2025-02-07 15:04:28,078 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8080-exec-1] Redirecting to http://localhost:8080/login
+2025-02-07 15:04:28,086 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-2] Securing GET /login
+2025-02-07 15:04:28,087 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-2] Secured GET /login
+2025-02-07 15:04:28,089 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/login", parameters={}
+2025-02-07 15:04:28,092 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to com.whilter.genai.controller.UserController#login()
+2025-02-07 15:05:03,237 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:05:03,482 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-02-07 15:05:03,483 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:05:03,518 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-4] Securing GET /css/styles.css
+2025-02-07 15:05:03,519 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-4] Secured GET /css/styles.css
+2025-02-07 15:05:03,521 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/css/styles.css", parameters={}
+2025-02-07 15:05:03,524 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:05:03,539 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-02-07 15:05:03,540 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:05:13,818 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-8] Securing POST /login
+2025-02-07 15:05:14,107 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-8] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:05:14,209 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8080-exec-8] Authenticated user
+2025-02-07 15:05:14,210 DEBUG o.s.s.w.a.s.AbstractSessionFixationProtectionStrategy [http-nio-8080-exec-8] Changed session id from B94AB6DCD490C16464DEF90BD638EBD9
+2025-02-07 15:05:14,213 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-8] Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B94AB6DCD490C16464DEF90BD638EBD9], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@6759b1c3]
+2025-02-07 15:05:14,215 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8080-exec-8] Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B94AB6DCD490C16464DEF90BD638EBD9], Granted Authorities=[ROLE_USER]]
+2025-02-07 15:05:14,216 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8080-exec-8] Redirecting to http://localhost:8080/?continue
+2025-02-07 15:05:14,222 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-5] Securing GET /?continue
+2025-02-07 15:05:14,226 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8080-exec-5] Loaded matching saved request http://localhost:8080/?continue
+2025-02-07 15:05:14,229 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-5] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B94AB6DCD490C16464DEF90BD638EBD9], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:05:14,231 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-5] Secured GET /?continue
+2025-02-07 15:05:14,232 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/?continue", parameters={masked}
+2025-02-07 15:05:14,234 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to com.whilter.genai.controller.UserController#home()
+2025-02-07 15:05:14,253 DEBUG o.s.w.s.v.AbstractView [http-nio-8080-exec-5] View name 'redirect:', model {}
+2025-02-07 15:05:14,262 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 302 FOUND
+2025-02-07 15:05:14,272 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-6] Securing GET /login
+2025-02-07 15:05:14,273 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-6] Secured GET /login
+2025-02-07 15:05:14,275 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/login", parameters={}
+2025-02-07 15:05:14,277 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to com.whilter.genai.controller.UserController#login()
+2025-02-07 15:05:22,410 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-6] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:05:22,414 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-02-07 15:05:22,415 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-6] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B94AB6DCD490C16464DEF90BD638EBD9], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:05:22,429 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-7] Securing GET /css/styles.css
+2025-02-07 15:05:22,430 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-7] Secured GET /css/styles.css
+2025-02-07 15:05:22,431 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/css/styles.css", parameters={}
+2025-02-07 15:05:22,433 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:05:22,438 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-02-07 15:05:22,439 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-7] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B94AB6DCD490C16464DEF90BD638EBD9], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:13:25,000 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 15:13:25,053 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 26972 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 15:13:25,055 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 15:13:25,057 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 15:13:25,723 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 15:13:25,782 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 50 ms. Found 2 JPA repository interfaces.
+2025-02-07 15:13:26,306 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-02-07 15:13:26,316 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-07 15:13:26,319 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 15:13:26,319 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 15:13:26,373 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 15:13:26,375 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1273 ms
+2025-02-07 15:13:26,507 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 15:13:26,555 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 15:13:26,586 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 15:13:26,778 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 15:13:26,804 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 15:13:26,956 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60fc7f43
+2025-02-07 15:13:26,958 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 15:13:26,992 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 15:13:27,888 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 15:13:27,983 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:13:28,236 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 15:13:28,241 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 15:13:28,305 DEBUG c.w.g.c.SecurityConfig [main] Creating AuthenticationManager
+2025-02-07 15:13:28,319 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 15:13:28,413 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 15:13:28,531 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 8 mappings in 'requestMappingHandlerMapping'
+2025-02-07 15:13:28,597 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 15:13:28,605 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 15:13:28,612 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 15:13:28,622 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 15:13:28,634 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 15:13:28,636 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 15:13:28,637 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 15:13:28,638 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 15:13:28,685 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e7d9d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b0d818d, org.springframework.security.web.context.SecurityContextHolderFilter@1a3611b1, org.springframework.security.web.header.HeaderWriterFilter@2e8eafb2, org.springframework.web.filter.CorsFilter@7212b28e, org.springframework.security.web.authentication.logout.LogoutFilter@2f408960, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@2c7ac998, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@4ac26092, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@61d4155b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@427c2c96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@238d27ef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@306c8e09, org.springframework.security.web.access.ExceptionTranslationFilter@3c39c739, org.springframework.security.web.access.intercept.AuthorizationFilter@36a25457]
+2025-02-07 15:13:28,756 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 15:13:28,787 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 15:13:28,889 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-07 15:13:28,906 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2025-02-07 15:13:28,915 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 4.362 seconds (process running for 4.66)
+2025-02-07 15:13:36,896 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-07 15:13:36,897 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-07 15:13:36,898 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-02-07 15:13:36,898 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-07 15:13:36,899 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-02-07 15:13:36,900 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4f0f56f5
+2025-02-07 15:13:36,901 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@5b11d0d8
+2025-02-07 15:13:36,902 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-07 15:13:36,904 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 7 ms
+2025-02-07 15:13:36,922 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-1] Securing GET /login
+2025-02-07 15:13:36,938 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-1] Secured GET /login
+2025-02-07 15:13:36,940 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/login", parameters={}
+2025-02-07 15:13:36,942 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:13:37,003 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:13:37,255 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-02-07 15:13:37,257 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:13:37,270 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-4] Securing GET /css/styles.css
+2025-02-07 15:13:37,272 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-4] Secured GET /css/styles.css
+2025-02-07 15:13:37,272 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/css/styles.css", parameters={}
+2025-02-07 15:13:37,274 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:13:37,286 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-02-07 15:13:37,287 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:13:46,090 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-3] Securing GET /register
+2025-02-07 15:13:46,090 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-3] Secured GET /register
+2025-02-07 15:13:46,091 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/register", parameters={}
+2025-02-07 15:13:46,092 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to com.whilter.genai.controller.UserController#showRegistrationForm(Model)
+2025-02-07 15:13:46,096 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:13:46,136 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-02-07 15:13:46,137 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:13:46,153 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-5] Securing GET /css/styles.css
+2025-02-07 15:13:46,154 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-5] Secured GET /css/styles.css
+2025-02-07 15:13:46,155 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/css/styles.css", parameters={}
+2025-02-07 15:13:46,156 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:13:46,161 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-02-07 15:13:46,162 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:13:49,204 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-2] Securing GET /login
+2025-02-07 15:13:49,205 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-2] Secured GET /login
+2025-02-07 15:13:49,206 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/login", parameters={}
+2025-02-07 15:13:49,206 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:13:49,208 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:13:49,212 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-02-07 15:13:49,213 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:13:49,227 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-7] Securing GET /css/styles.css
+2025-02-07 15:13:49,229 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-7] Secured GET /css/styles.css
+2025-02-07 15:13:49,230 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/css/styles.css", parameters={}
+2025-02-07 15:13:49,231 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:13:49,236 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-02-07 15:13:49,237 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:13:57,882 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-6] Securing POST /login
+2025-02-07 15:13:58,093 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-6] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:13:58,172 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8080-exec-6] Failed to find user 'dharmendra@racloop.com'
+2025-02-07 15:13:58,209 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8080-exec-6] Redirecting to /login?error
+2025-02-07 15:13:58,215 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-8] Securing GET /login?error
+2025-02-07 15:13:58,218 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-8] Secured GET /login?error
+2025-02-07 15:13:58,218 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-8] GET "/login?error", parameters={masked}
+2025-02-07 15:13:58,219 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-8] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:13:58,221 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-8] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:13:58,224 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-8] Completed 200 OK
+2025-02-07 15:13:58,225 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:13:58,241 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-9] Securing GET /css/styles.css
+2025-02-07 15:13:58,242 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-9] Secured GET /css/styles.css
+2025-02-07 15:13:58,244 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-9] GET "/css/styles.css", parameters={}
+2025-02-07 15:13:58,246 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-9] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:13:58,250 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-9] Completed 200 OK
+2025-02-07 15:13:58,250 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:14:04,183 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-10] Securing POST /login
+2025-02-07 15:14:04,186 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-10] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:14:04,273 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8080-exec-10] Authenticated user
+2025-02-07 15:14:04,275 DEBUG o.s.s.w.a.s.AbstractSessionFixationProtectionStrategy [http-nio-8080-exec-10] Changed session id from 176F0AE35A22242B5DB549ED08E11B22
+2025-02-07 15:14:04,277 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-10] Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=176F0AE35A22242B5DB549ED08E11B22], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@7f68f727]
+2025-02-07 15:14:04,279 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8080-exec-10] Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=176F0AE35A22242B5DB549ED08E11B22], Granted Authorities=[ROLE_USER]]
+2025-02-07 15:14:04,280 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8080-exec-10] Redirecting to /dashboard
+2025-02-07 15:14:04,284 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-1] Securing GET /dashboard
+2025-02-07 15:14:04,286 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-1] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=176F0AE35A22242B5DB549ED08E11B22], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:14:04,287 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-1] Secured GET /dashboard
+2025-02-07 15:14:04,288 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/dashboard", parameters={}
+2025-02-07 15:14:04,290 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 15:14:04,290 DEBUG c.w.g.c.UserController [http-nio-8080-exec-1] Loading dashboard for user: dhk
+2025-02-07 15:14:04,301 DEBUG c.w.g.s.UserService [http-nio-8080-exec-1] Fetching user by username: dhk
+2025-02-07 15:14:04,303 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:14:04,310 DEBUG c.w.g.s.SocialConnectionService [http-nio-8080-exec-1] Fetching social connections for user: dhk
+2025-02-07 15:14:04,325 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-1] select sc1_0.id,sc1_0.access_token,sc1_0.connected,sc1_0.provider,sc1_0.provider_user_id,sc1_0.refresh_token,sc1_0.token_expiry,sc1_0.user_id,sc1_0.username from social_connections sc1_0 where sc1_0.user_id=?
+2025-02-07 15:14:04,331 DEBUG c.w.g.c.UserController [http-nio-8080-exec-1] Dashboard loaded with 0 social connections
+2025-02-07 15:14:04,333 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:14:04,360 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-02-07 15:14:04,379 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-4] Securing GET /css/styles.css
+2025-02-07 15:14:04,380 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-4] Secured GET /css/styles.css
+2025-02-07 15:14:04,381 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/css/styles.css", parameters={}
+2025-02-07 15:14:04,383 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:14:04,387 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-02-07 15:14:04,387 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-4] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=176F0AE35A22242B5DB549ED08E11B22], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:14:14,583 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-3] Securing POST /logout
+2025-02-07 15:14:14,584 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-3] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=176F0AE35A22242B5DB549ED08E11B22], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:14:14,585 DEBUG o.s.s.w.a.l.LogoutFilter [http-nio-8080-exec-3] Logging out [UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=176F0AE35A22242B5DB549ED08E11B22], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:14:14,586 DEBUG o.s.s.w.a.l.SecurityContextLogoutHandler [http-nio-8080-exec-3] Invalidated session 82B2970B0E73DCB3355A444EF4EAE347
+2025-02-07 15:14:14,587 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8080-exec-3] Redirecting to /login?logout
+2025-02-07 15:14:14,593 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-5] Securing GET /login?logout
+2025-02-07 15:14:14,594 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-5] Secured GET /login?logout
+2025-02-07 15:14:14,595 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/login?logout", parameters={masked}
+2025-02-07 15:14:14,597 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:14:14,599 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-5] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:14:14,602 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-02-07 15:14:14,603 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:14:14,620 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-2] Securing GET /css/styles.css
+2025-02-07 15:14:14,620 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-2] Secured GET /css/styles.css
+2025-02-07 15:14:14,622 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-2] GET "/css/styles.css", parameters={}
+2025-02-07 15:14:14,623 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:14:14,627 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK
+2025-02-07 15:14:14,627 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:15:35,783 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:15:35,785 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-07 15:15:35,789 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-02-07 15:20:58,994 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 15:20:59,048 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 5396 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 15:20:59,050 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 15:20:59,051 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 15:20:59,687 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 15:20:59,747 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2025-02-07 15:21:00,270 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2025-02-07 15:21:00,279 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2025-02-07 15:21:00,282 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 15:21:00,283 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 15:21:00,340 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 15:21:00,341 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1248 ms
+2025-02-07 15:21:00,471 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 15:21:00,518 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 15:21:00,548 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 15:21:00,740 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 15:21:00,768 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 15:21:00,917 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@752973de
+2025-02-07 15:21:00,920 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 15:21:00,961 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 15:21:01,803 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 15:21:01,892 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:21:02,144 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 15:21:02,150 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 15:21:02,214 DEBUG c.w.g.c.SecurityConfig [main] Creating AuthenticationManager
+2025-02-07 15:21:02,229 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 15:21:02,325 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 15:21:02,443 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 8 mappings in 'requestMappingHandlerMapping'
+2025-02-07 15:21:02,515 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 15:21:02,527 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 15:21:02,530 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 15:21:02,543 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 15:21:02,551 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 15:21:02,554 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 15:21:02,555 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 15:21:02,555 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 15:21:02,602 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@18d63996, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e6bd43b, org.springframework.security.web.context.SecurityContextHolderFilter@495e1ad1, org.springframework.security.web.header.HeaderWriterFilter@1be3e952, org.springframework.web.filter.CorsFilter@4a532271, org.springframework.security.web.authentication.logout.LogoutFilter@32da6cef, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@2f2a5064, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1fa77770, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44103266, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@eef6e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56b66cc6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35b38986, org.springframework.security.web.access.ExceptionTranslationFilter@b0e6d4e, org.springframework.security.web.access.intercept.AuthorizationFilter@6600d07d]
+2025-02-07 15:21:02,676 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 15:21:02,707 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 15:21:02,812 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2025-02-07 15:21:02,829 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2025-02-07 15:21:02,839 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 4.275 seconds (process running for 4.576)
+2025-02-07 15:21:08,920 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-07 15:21:08,921 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-07 15:21:08,921 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected StandardServletMultipartResolver
+2025-02-07 15:21:08,921 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-07 15:21:08,922 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected FixedThemeResolver
+2025-02-07 15:21:08,924 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a23136f
+2025-02-07 15:21:08,924 DEBUG o.s.w.s.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@12e13abd
+2025-02-07 15:21:08,925 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-07 15:21:08,925 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2025-02-07 15:21:08,943 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-1] Securing GET /login?logout
+2025-02-07 15:21:08,957 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-1] Secured GET /login?logout
+2025-02-07 15:21:08,960 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-1] GET "/login?logout", parameters={masked}
+2025-02-07 15:21:08,962 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:21:08,993 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:21:09,221 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK
+2025-02-07 15:21:09,224 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:21:09,235 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-4] Securing GET /css/styles.css
+2025-02-07 15:21:09,238 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-4] Secured GET /css/styles.css
+2025-02-07 15:21:09,238 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-4] GET "/css/styles.css", parameters={}
+2025-02-07 15:21:09,240 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-4] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:21:09,252 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-4] Completed 200 OK
+2025-02-07 15:21:09,253 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:21:12,995 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-5] Securing GET /login?logout
+2025-02-07 15:21:12,996 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-5] Secured GET /login?logout
+2025-02-07 15:21:12,996 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-5] GET "/login?logout", parameters={masked}
+2025-02-07 15:21:12,998 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-5] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:21:13,000 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-5] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:21:13,003 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-5] Completed 200 OK
+2025-02-07 15:21:13,004 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:21:13,018 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-3] Securing GET /css/styles.css
+2025-02-07 15:21:13,019 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-3] Secured GET /css/styles.css
+2025-02-07 15:21:13,020 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-3] GET "/css/styles.css", parameters={}
+2025-02-07 15:21:13,022 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:21:13,025 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed 200 OK
+2025-02-07 15:21:13,025 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8080-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:21:23,842 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-8] Securing POST /login
+2025-02-07 15:21:24,038 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-8] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:21:24,134 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8080-exec-8] Authenticated user
+2025-02-07 15:21:24,174 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-8] Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@10c2fbb2]
+2025-02-07 15:21:24,175 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8080-exec-8] Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]
+2025-02-07 15:21:24,176 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8080-exec-8] Redirecting to /dashboard
+2025-02-07 15:21:24,181 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-7] Securing GET /dashboard
+2025-02-07 15:21:24,182 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-7] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:21:24,184 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-7] Secured GET /dashboard
+2025-02-07 15:21:24,185 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-7] GET "/dashboard", parameters={}
+2025-02-07 15:21:24,186 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-7] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 15:21:24,187 DEBUG c.w.g.c.UserController [http-nio-8080-exec-7] Loading dashboard for user: dhk
+2025-02-07 15:21:24,193 DEBUG c.w.g.s.UserService [http-nio-8080-exec-7] Fetching user by username: dhk
+2025-02-07 15:21:24,196 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-7] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:21:24,202 DEBUG c.w.g.s.SocialConnectionService [http-nio-8080-exec-7] Getting formatted social connections for user: dhk
+2025-02-07 15:21:24,211 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8080-exec-7] select sc1_0.id,sc1_0.access_token,sc1_0.connected,sc1_0.provider,sc1_0.provider_user_id,sc1_0.refresh_token,sc1_0.token_expiry,sc1_0.user_id,sc1_0.username from social_connections sc1_0 where sc1_0.user_id=?
+2025-02-07 15:21:24,218 DEBUG c.w.g.c.UserController [http-nio-8080-exec-7] Dashboard loaded with 3 social connections
+2025-02-07 15:21:24,222 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8080-exec-7] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:21:24,245 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-7] Completed 200 OK
+2025-02-07 15:21:24,257 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-6] Securing GET /css/styles.css
+2025-02-07 15:21:24,258 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-6] Secured GET /css/styles.css
+2025-02-07 15:21:24,259 DEBUG o.s.c.l.LogFormatUtils [http-nio-8080-exec-6] GET "/css/styles.css", parameters={}
+2025-02-07 15:21:24,260 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8080-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:21:24,265 DEBUG o.s.w.s.FrameworkServlet [http-nio-8080-exec-6] Completed 200 OK
+2025-02-07 15:21:24,266 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8080-exec-6] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:21:52,722 DEBUG o.s.s.w.FilterChainProxy [http-nio-8080-exec-2] Securing GET /oauth2/authorization/google
+2025-02-07 15:21:52,732 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8080-exec-2] Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/drive%20https://www.googleapis.com/auth/drive.file%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/drive.readonly%20https://www.googleapis.com/auth/drive.metadata.readonly&state=6RM9fvryTTKlAc-ZzDadO-X5DU44hMSRnc5xjMzs3lQ%3D&redirect_uri=http://localhost:8080/login/oauth2/code/google
+2025-02-07 15:22:46,448 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:22:46,451 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-02-07 15:22:46,453 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-02-07 15:23:40,202 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 15:23:40,282 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 19440 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 15:23:40,284 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 15:23:40,286 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 15:23:41,298 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 15:23:41,423 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
+2025-02-07 15:23:42,301 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-02-07 15:23:42,311 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-02-07 15:23:42,313 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 15:23:42,314 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 15:23:42,390 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 15:23:42,391 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2047 ms
+2025-02-07 15:23:42,595 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 15:23:42,701 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 15:23:42,756 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 15:23:43,062 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 15:23:43,099 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 15:23:43,333 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@13234ac9
+2025-02-07 15:23:43,336 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 15:23:43,381 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 15:23:44,350 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 15:23:44,438 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:23:44,836 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 15:23:44,842 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 15:23:44,940 DEBUG c.w.g.c.SecurityConfig [main] Creating AuthenticationManager
+2025-02-07 15:23:44,958 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 15:23:45,099 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 15:23:45,290 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 8 mappings in 'requestMappingHandlerMapping'
+2025-02-07 15:23:45,400 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 15:23:45,410 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 15:23:45,412 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 15:23:45,425 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 15:23:45,435 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 15:23:45,440 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 15:23:45,441 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 15:23:45,442 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 15:23:45,511 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65852d05, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47462daf, org.springframework.security.web.context.SecurityContextHolderFilter@52518ee1, org.springframework.security.web.header.HeaderWriterFilter@1299fed3, org.springframework.web.filter.CorsFilter@43fdef43, org.springframework.security.web.authentication.logout.LogoutFilter@1a598e30, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@47596e9, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@350ede1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e205025, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a4564a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@157267db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f36c191, org.springframework.security.web.access.ExceptionTranslationFilter@2d91147b, org.springframework.security.web.access.intercept.AuthorizationFilter@1f591b2e]
+2025-02-07 15:23:45,620 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 15:23:45,667 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 15:23:45,838 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-02-07 15:23:45,862 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2025-02-07 15:23:45,876 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 6.262 seconds (process running for 6.829)
+2025-02-07 15:23:54,516 INFO o.a.j.l.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-07 15:23:54,517 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-07 15:23:54,519 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected StandardServletMultipartResolver
+2025-02-07 15:23:54,520 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-07 15:23:54,520 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected FixedThemeResolver
+2025-02-07 15:23:54,522 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@44d36b56
+2025-02-07 15:23:54,523 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@61e4a072
+2025-02-07 15:23:54,524 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-07 15:23:54,525 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 6 ms
+2025-02-07 15:23:54,544 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-1] Securing GET /
+2025-02-07 15:23:54,554 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:23:54,608 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8082-exec-1] Saved request http://localhost:8082/?continue to session
+2025-02-07 15:23:54,612 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8082-exec-1] Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@38ae69f7, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-02-07 15:23:54,613 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8082-exec-1] Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@772589ed
+2025-02-07 15:23:54,616 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-1] Redirecting to http://localhost:8082/login
+2025-02-07 15:23:54,654 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Securing GET /login
+2025-02-07 15:23:54,659 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Secured GET /login
+2025-02-07 15:23:54,664 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-2] GET "/login", parameters={}
+2025-02-07 15:23:54,670 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-2] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:23:54,719 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:23:54,984 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-2] Completed 200 OK
+2025-02-07 15:23:54,985 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:23:55,002 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Securing GET /css/styles.css
+2025-02-07 15:23:55,003 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Secured GET /css/styles.css
+2025-02-07 15:23:55,003 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-3] GET "/css/styles.css", parameters={}
+2025-02-07 15:23:55,005 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:23:55,017 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-3] Completed 200 OK
+2025-02-07 15:23:55,017 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:24:04,407 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Securing POST /login
+2025-02-07 15:24:04,647 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-5] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:24:04,730 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8082-exec-5] Authenticated user
+2025-02-07 15:24:04,732 DEBUG o.s.s.w.a.s.AbstractSessionFixationProtectionStrategy [http-nio-8082-exec-5] Changed session id from B6A102416B5ADA83980D31D1484A2305
+2025-02-07 15:24:04,734 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-5] Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B6A102416B5ADA83980D31D1484A2305], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@4ebade3a]
+2025-02-07 15:24:04,735 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8082-exec-5] Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B6A102416B5ADA83980D31D1484A2305], Granted Authorities=[ROLE_USER]]
+2025-02-07 15:24:04,737 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-5] Redirecting to http://localhost:8082/?continue
+2025-02-07 15:24:04,743 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-4] Securing GET /?continue
+2025-02-07 15:24:04,744 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8082-exec-4] Loaded matching saved request http://localhost:8082/?continue
+2025-02-07 15:24:04,747 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-4] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B6A102416B5ADA83980D31D1484A2305], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:24:04,748 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-4] Secured GET /?continue
+2025-02-07 15:24:04,750 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-4] GET "/?continue", parameters={masked}
+2025-02-07 15:24:04,751 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-4] Mapped to com.whilter.genai.controller.UserController#home()
+2025-02-07 15:24:04,759 DEBUG o.s.w.s.v.AbstractView [http-nio-8082-exec-4] View name 'redirect:', model {}
+2025-02-07 15:24:04,761 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-4] Completed 302 FOUND
+2025-02-07 15:24:04,766 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Securing GET /dashboard
+2025-02-07 15:24:04,768 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-7] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B6A102416B5ADA83980D31D1484A2305], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:24:04,770 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Secured GET /dashboard
+2025-02-07 15:24:04,770 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-7] GET "/dashboard", parameters={}
+2025-02-07 15:24:04,771 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-7] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 15:24:04,774 DEBUG c.w.g.c.UserController [http-nio-8082-exec-7] Loading dashboard for user: dhk
+2025-02-07 15:24:04,783 DEBUG c.w.g.s.UserService [http-nio-8082-exec-7] Fetching user by username: dhk
+2025-02-07 15:24:04,787 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-7] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:24:04,795 DEBUG c.w.g.s.SocialConnectionService [http-nio-8082-exec-7] Getting formatted social connections for user: dhk
+2025-02-07 15:24:04,810 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-7] select sc1_0.id,sc1_0.access_token,sc1_0.connected,sc1_0.provider,sc1_0.provider_user_id,sc1_0.refresh_token,sc1_0.token_expiry,sc1_0.user_id,sc1_0.username from social_connections sc1_0 where sc1_0.user_id=?
+2025-02-07 15:24:04,818 DEBUG c.w.g.c.UserController [http-nio-8082-exec-7] Dashboard loaded with 3 social connections
+2025-02-07 15:24:04,822 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-7] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:24:04,848 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-7] Completed 200 OK
+2025-02-07 15:24:04,879 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Securing GET /css/styles.css
+2025-02-07 15:24:04,880 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Secured GET /css/styles.css
+2025-02-07 15:24:04,881 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-6] GET "/css/styles.css", parameters={}
+2025-02-07 15:24:04,882 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-6] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:24:04,888 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-6] Completed 200 OK
+2025-02-07 15:24:04,888 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-6] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B6A102416B5ADA83980D31D1484A2305], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:24:08,178 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-8] Securing GET /oauth2/authorization/google
+2025-02-07 15:24:08,188 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-8] Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/drive%20https://www.googleapis.com/auth/drive.file%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/drive.readonly%20https://www.googleapis.com/auth/drive.metadata.readonly&state=XpCVmbH90Cw8BeG2aTbaHfW4kET10gw4lbc9-Nx_NPQ%3D&redirect_uri=http://localhost:8082/login/oauth2/code/google
+2025-02-07 15:27:33,657 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 15:27:33,714 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 6028 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 15:27:33,715 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 15:27:33,718 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 15:27:34,676 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 15:27:34,767 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2025-02-07 15:27:35,446 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-02-07 15:27:35,456 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-02-07 15:27:35,460 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 15:27:35,460 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 15:27:35,531 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 15:27:35,535 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1760 ms
+2025-02-07 15:27:35,749 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 15:27:35,835 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 15:27:35,886 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 15:27:36,174 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 15:27:36,214 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 15:27:36,415 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@50de907a
+2025-02-07 15:27:36,417 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 15:27:36,456 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 15:27:37,418 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 15:27:37,503 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:27:37,895 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 15:27:37,902 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 15:27:37,996 DEBUG c.w.g.c.SecurityConfig [main] Creating AuthenticationManager
+2025-02-07 15:27:38,015 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 15:27:38,149 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 15:27:38,328 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 8 mappings in 'requestMappingHandlerMapping'
+2025-02-07 15:27:38,428 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 15:27:38,439 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 15:27:38,441 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 15:27:38,453 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 15:27:38,464 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 15:27:38,469 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 15:27:38,470 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 15:27:38,471 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 15:27:38,535 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76b6bad3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e38d655, org.springframework.security.web.context.SecurityContextHolderFilter@5aa2758a, org.springframework.security.web.header.HeaderWriterFilter@5f93ec02, org.springframework.web.filter.CorsFilter@7325b786, org.springframework.security.web.authentication.logout.LogoutFilter@7c7a4986, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@6f53f5a4, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7860a014, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@379df603, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d732cda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@755fdfad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f943847, org.springframework.security.web.access.ExceptionTranslationFilter@9120cb5, org.springframework.security.web.access.intercept.AuthorizationFilter@16b713dd]
+2025-02-07 15:27:38,651 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 15:27:38,699 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 15:27:38,885 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-02-07 15:27:38,911 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2025-02-07 15:27:38,923 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 5.799 seconds (process running for 6.39)
+2025-02-07 15:27:45,288 INFO o.a.j.l.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-07 15:27:45,289 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-07 15:27:45,290 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected StandardServletMultipartResolver
+2025-02-07 15:27:45,291 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-07 15:27:45,292 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected FixedThemeResolver
+2025-02-07 15:27:45,293 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7c0ecdbf
+2025-02-07 15:27:45,295 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@3c6e407
+2025-02-07 15:27:45,296 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-07 15:27:45,298 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 8 ms
+2025-02-07 15:27:45,318 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-1] Securing GET /
+2025-02-07 15:27:45,328 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:27:45,383 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8082-exec-1] Saved request http://localhost:8082/?continue to session
+2025-02-07 15:27:45,387 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8082-exec-1] Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@45f70f68, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-02-07 15:27:45,388 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8082-exec-1] Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@4193da4d
+2025-02-07 15:27:45,390 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-1] Redirecting to http://localhost:8082/login
+2025-02-07 15:27:45,399 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-4] Securing GET /login
+2025-02-07 15:27:45,401 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-4] Secured GET /login
+2025-02-07 15:27:45,405 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-4] GET "/login", parameters={}
+2025-02-07 15:27:45,408 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-4] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:27:45,441 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-4] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:27:45,678 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-4] Completed 200 OK
+2025-02-07 15:27:45,678 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:27:45,690 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Securing GET /css/styles.css
+2025-02-07 15:27:45,691 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Secured GET /css/styles.css
+2025-02-07 15:27:45,691 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-3] GET "/css/styles.css", parameters={}
+2025-02-07 15:27:45,693 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:27:45,706 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-3] Completed 200 OK
+2025-02-07 15:27:45,707 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:27:53,254 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Securing POST /login
+2025-02-07 15:27:53,493 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-2] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:27:53,576 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8082-exec-2] Authenticated user
+2025-02-07 15:27:53,578 DEBUG o.s.s.w.a.s.AbstractSessionFixationProtectionStrategy [http-nio-8082-exec-2] Changed session id from 9C66C6154D2E1617061D119E75D7419A
+2025-02-07 15:27:53,580 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-2] Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=9C66C6154D2E1617061D119E75D7419A], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@6603dc2f]
+2025-02-07 15:27:53,582 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8082-exec-2] Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=9C66C6154D2E1617061D119E75D7419A], Granted Authorities=[ROLE_USER]]
+2025-02-07 15:27:53,583 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-2] Redirecting to http://localhost:8082/?continue
+2025-02-07 15:27:53,590 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Securing GET /?continue
+2025-02-07 15:27:53,591 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8082-exec-5] Loaded matching saved request http://localhost:8082/?continue
+2025-02-07 15:27:53,594 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-5] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=9C66C6154D2E1617061D119E75D7419A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:27:53,595 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Secured GET /?continue
+2025-02-07 15:27:53,597 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-5] GET "/?continue", parameters={masked}
+2025-02-07 15:27:53,598 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-5] Mapped to com.whilter.genai.controller.UserController#home()
+2025-02-07 15:27:53,608 DEBUG o.s.w.s.v.AbstractView [http-nio-8082-exec-5] View name 'redirect:', model {}
+2025-02-07 15:27:53,611 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-5] Completed 302 FOUND
+2025-02-07 15:27:53,616 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Securing GET /dashboard
+2025-02-07 15:27:53,618 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-6] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=9C66C6154D2E1617061D119E75D7419A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:27:53,619 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Secured GET /dashboard
+2025-02-07 15:27:53,620 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-6] GET "/dashboard", parameters={}
+2025-02-07 15:27:53,621 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-6] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 15:27:53,623 DEBUG c.w.g.c.UserController [http-nio-8082-exec-6] Loading dashboard for user: dhk
+2025-02-07 15:27:53,631 DEBUG c.w.g.s.UserService [http-nio-8082-exec-6] Fetching user by username: dhk
+2025-02-07 15:27:53,635 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-6] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:27:53,641 DEBUG c.w.g.s.SocialConnectionService [http-nio-8082-exec-6] Getting formatted social connections for user: dhk
+2025-02-07 15:27:53,657 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-6] select sc1_0.id,sc1_0.access_token,sc1_0.connected,sc1_0.provider,sc1_0.provider_user_id,sc1_0.refresh_token,sc1_0.token_expiry,sc1_0.user_id,sc1_0.username from social_connections sc1_0 where sc1_0.user_id=?
+2025-02-07 15:27:53,665 DEBUG c.w.g.c.UserController [http-nio-8082-exec-6] Dashboard loaded with 3 social connections
+2025-02-07 15:27:53,668 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-6] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:27:53,696 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-6] Completed 200 OK
+2025-02-07 15:27:53,712 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Securing GET /css/styles.css
+2025-02-07 15:27:53,713 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Secured GET /css/styles.css
+2025-02-07 15:27:53,714 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-7] GET "/css/styles.css", parameters={}
+2025-02-07 15:27:53,716 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:27:53,721 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-7] Completed 200 OK
+2025-02-07 15:27:53,722 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-7] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=9C66C6154D2E1617061D119E75D7419A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:27:57,413 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-8] Securing GET /oauth2/authorization/google
+2025-02-07 15:27:57,424 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-8] Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com&scope=https://www.googleapis.com/auth/drive%20https://www.googleapis.com/auth/drive.file%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/drive.readonly%20https://www.googleapis.com/auth/drive.metadata.readonly&state=jhw0Tb7FnALX-kcswGs1ywkGZ7c8VoCA0F_JocOfpa8%3D&redirect_uri=http://localhost:8082/login/oauth2/code/google
+2025-02-07 15:52:24,329 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 15:52:24,390 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 4900 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 15:52:24,392 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 15:52:24,394 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 15:52:25,360 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 15:52:25,450 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 75 ms. Found 2 JPA repository interfaces.
+2025-02-07 15:52:26,157 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-02-07 15:52:26,167 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-02-07 15:52:26,168 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 15:52:26,169 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 15:52:26,241 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 15:52:26,243 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1786 ms
+2025-02-07 15:52:26,442 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 15:52:26,524 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 15:52:26,574 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 15:52:26,853 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 15:52:26,892 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 15:52:27,099 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60f662bd
+2025-02-07 15:52:27,102 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 15:52:27,144 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 15:52:28,111 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 15:52:28,206 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:52:28,668 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 15:52:28,677 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 15:52:28,699 DEBUG c.w.g.c.SecurityConfig [main] Creating AuthenticationManager
+2025-02-07 15:52:28,722 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 15:52:28,873 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 15:52:29,055 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 9 mappings in 'requestMappingHandlerMapping'
+2025-02-07 15:52:29,161 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 15:52:29,172 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 15:52:29,174 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 15:52:29,187 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 15:52:29,192 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 15:52:29,195 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 15:52:29,197 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 15:52:29,197 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 15:52:29,272 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@54a5eff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29612ee2, org.springframework.security.web.context.SecurityContextHolderFilter@58922a00, org.springframework.security.web.header.HeaderWriterFilter@1a4564a2, org.springframework.web.filter.CorsFilter@20524816, org.springframework.security.web.authentication.logout.LogoutFilter@379df603, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@65852d05, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3f36c191, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24455d50, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f09cb98, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7236213e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a7cbeed, org.springframework.security.web.access.ExceptionTranslationFilter@52518ee1, org.springframework.security.web.access.intercept.AuthorizationFilter@2f6352a3]
+2025-02-07 15:52:29,390 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 15:52:29,441 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 15:52:29,628 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-02-07 15:52:29,654 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2025-02-07 15:52:29,666 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 5.916 seconds (process running for 6.496)
+2025-02-07 15:53:27,657 INFO o.a.j.l.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-07 15:53:27,658 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-07 15:53:27,658 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected StandardServletMultipartResolver
+2025-02-07 15:53:27,660 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-07 15:53:27,661 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected FixedThemeResolver
+2025-02-07 15:53:27,662 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@25502b1c
+2025-02-07 15:53:27,663 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@1415f18d
+2025-02-07 15:53:27,664 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-07 15:53:27,665 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 7 ms
+2025-02-07 15:53:27,689 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-1] Securing GET /login
+2025-02-07 15:53:27,699 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-1] Secured GET /login
+2025-02-07 15:53:27,702 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-1] GET "/login", parameters={}
+2025-02-07 15:53:27,704 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-1] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:53:27,738 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-1] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:53:28,003 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Completed 200 OK
+2025-02-07 15:53:28,004 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:53:28,025 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Securing GET /css/styles.css
+2025-02-07 15:53:28,027 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Secured GET /css/styles.css
+2025-02-07 15:53:28,028 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-3] GET "/css/styles.css", parameters={}
+2025-02-07 15:53:28,031 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:53:28,041 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-3] Completed 200 OK
+2025-02-07 15:53:28,043 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:53:33,314 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-4] Securing POST /login
+2025-02-07 15:53:33,560 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-4] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:53:33,648 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8082-exec-4] Authenticated user
+2025-02-07 15:53:33,694 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-4] Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@aab7cf0]
+2025-02-07 15:53:33,695 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8082-exec-4] Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]
+2025-02-07 15:53:33,696 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-4] Redirecting to /dashboard
+2025-02-07 15:53:33,702 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Securing GET /dashboard
+2025-02-07 15:53:33,702 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-2] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:53:33,705 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Secured GET /dashboard
+2025-02-07 15:53:33,705 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-2] GET "/dashboard", parameters={}
+2025-02-07 15:53:33,706 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-2] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 15:53:33,707 DEBUG c.w.g.c.UserController [http-nio-8082-exec-2] Loading dashboard for user: dhk
+2025-02-07 15:53:33,713 DEBUG c.w.g.s.UserService [http-nio-8082-exec-2] Fetching user by username: dhk
+2025-02-07 15:53:33,717 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-2] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:53:33,725 DEBUG c.w.g.s.SocialConnectionService [http-nio-8082-exec-2] Getting formatted social connections for user: dhk
+2025-02-07 15:53:33,735 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-2] select sc1_0.id,sc1_0.access_token,sc1_0.connected,sc1_0.provider,sc1_0.provider_user_id,sc1_0.refresh_token,sc1_0.token_expiry,sc1_0.user_id,sc1_0.username from social_connections sc1_0 where sc1_0.user_id=?
+2025-02-07 15:53:33,741 DEBUG c.w.g.c.UserController [http-nio-8082-exec-2] Dashboard loaded with 3 social connections
+2025-02-07 15:53:33,745 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:53:33,772 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-2] Completed 200 OK
+2025-02-07 15:53:33,788 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Securing GET /css/styles.css
+2025-02-07 15:53:33,789 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Secured GET /css/styles.css
+2025-02-07 15:53:33,790 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-5] GET "/css/styles.css", parameters={}
+2025-02-07 15:53:33,792 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:53:33,797 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-5] Completed 200 OK
+2025-02-07 15:53:33,797 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-5] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:53:38,140 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Securing GET /oauth2/authorization/linkedin
+2025-02-07 15:53:38,154 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-6] Redirecting to https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77kblbid9qec8e&scope=r_liteprofile%20r_emailaddress&state=nwdf_soCfbbTRBhMqCrpd7rE1E8YRu-UT2EVD2BoVVA%3D&redirect_uri=http://localhost:8082/login/oauth2/code/linkedin
+2025-02-07 15:54:41,133 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 15:54:41,194 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 6876 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 15:54:41,197 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 15:54:41,199 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 15:54:42,390 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 15:54:42,505 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2025-02-07 15:54:43,348 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-02-07 15:54:43,372 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-02-07 15:54:43,379 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 15:54:43,379 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 15:54:43,474 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 15:54:43,476 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2210 ms
+2025-02-07 15:54:43,720 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 15:54:43,801 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 15:54:43,866 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 15:54:44,221 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 15:54:44,265 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 15:54:44,465 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c3c453b
+2025-02-07 15:54:44,468 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 15:54:44,504 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 15:54:45,483 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 15:54:45,577 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 15:54:46,048 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 15:54:46,056 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 15:54:46,076 DEBUG c.w.g.c.SecurityConfig [main] Creating AuthenticationManager
+2025-02-07 15:54:46,096 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 15:54:46,237 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 15:54:46,451 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 9 mappings in 'requestMappingHandlerMapping'
+2025-02-07 15:54:46,568 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 15:54:46,579 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 15:54:46,581 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 15:54:46,594 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 15:54:46,601 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 15:54:46,605 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 15:54:46,606 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 15:54:46,607 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 15:54:46,677 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32eac39b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ef0bc5b, org.springframework.security.web.context.SecurityContextHolderFilter@43a72f0f, org.springframework.security.web.header.HeaderWriterFilter@6ff87203, org.springframework.web.filter.CorsFilter@83bbab, org.springframework.security.web.authentication.logout.LogoutFilter@cef23a8, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@261b27db, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@60e5db1d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@410e043b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fa77770, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62f3ad90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67b2c8bb, org.springframework.security.web.access.ExceptionTranslationFilter@193792e6, org.springframework.security.web.access.intercept.AuthorizationFilter@78a7fccd]
+2025-02-07 15:54:46,816 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 15:54:46,862 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 15:54:47,006 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-02-07 15:54:47,027 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2025-02-07 15:54:47,040 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 6.626 seconds (process running for 7.007)
+2025-02-07 15:57:25,309 INFO o.a.j.l.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-07 15:57:25,311 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-07 15:57:25,312 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected StandardServletMultipartResolver
+2025-02-07 15:57:25,312 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-07 15:57:25,313 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected FixedThemeResolver
+2025-02-07 15:57:25,314 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@69c335c4
+2025-02-07 15:57:25,316 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@1f4fa465
+2025-02-07 15:57:25,317 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-07 15:57:25,322 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 10 ms
+2025-02-07 15:57:25,363 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-1] Securing GET /dashboard
+2025-02-07 15:57:25,381 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:57:25,449 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8082-exec-1] Saved request http://localhost:8082/dashboard?continue to session
+2025-02-07 15:57:25,455 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8082-exec-1] Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@643a73fa, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-02-07 15:57:25,458 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8082-exec-1] Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@4cc28ad0
+2025-02-07 15:57:25,461 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-1] Redirecting to http://localhost:8082/login
+2025-02-07 15:57:25,472 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Securing GET /login
+2025-02-07 15:57:25,474 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Secured GET /login
+2025-02-07 15:57:25,477 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-5] GET "/login", parameters={}
+2025-02-07 15:57:25,479 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-5] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 15:57:25,512 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-5] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:57:25,778 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-5] Completed 200 OK
+2025-02-07 15:57:25,779 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:57:25,802 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Securing GET /css/styles.css
+2025-02-07 15:57:25,804 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Secured GET /css/styles.css
+2025-02-07 15:57:25,805 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-3] GET "/css/styles.css", parameters={}
+2025-02-07 15:57:25,808 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-3] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:57:25,818 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-3] Completed 200 OK
+2025-02-07 15:57:25,819 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 15:57:31,357 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-4] Securing POST /login
+2025-02-07 15:57:31,580 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-4] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:57:31,666 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8082-exec-4] Authenticated user
+2025-02-07 15:57:31,668 DEBUG o.s.s.w.a.s.AbstractSessionFixationProtectionStrategy [http-nio-8082-exec-4] Changed session id from C6AF3AC96C0CEC669FED00A85140596A
+2025-02-07 15:57:31,670 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-4] Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C6AF3AC96C0CEC669FED00A85140596A], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@479b258b]
+2025-02-07 15:57:31,671 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8082-exec-4] Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C6AF3AC96C0CEC669FED00A85140596A], Granted Authorities=[ROLE_USER]]
+2025-02-07 15:57:31,672 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-4] Redirecting to http://localhost:8082/dashboard?continue
+2025-02-07 15:57:31,677 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Securing GET /dashboard?continue
+2025-02-07 15:57:31,679 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8082-exec-6] Loaded matching saved request http://localhost:8082/dashboard?continue
+2025-02-07 15:57:31,682 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-6] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C6AF3AC96C0CEC669FED00A85140596A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:57:31,683 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Secured GET /dashboard?continue
+2025-02-07 15:57:31,684 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-6] GET "/dashboard?continue", parameters={masked}
+2025-02-07 15:57:31,685 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-6] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 15:57:31,686 DEBUG c.w.g.c.UserController [http-nio-8082-exec-6] Loading dashboard for user: dhk
+2025-02-07 15:57:31,694 DEBUG c.w.g.s.UserService [http-nio-8082-exec-6] Fetching user by username: dhk
+2025-02-07 15:57:31,696 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-6] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:57:31,701 DEBUG c.w.g.s.SocialConnectionService [http-nio-8082-exec-6] Getting formatted social connections for user: dhk
+2025-02-07 15:57:31,712 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-6] select sc1_0.id,sc1_0.access_token,sc1_0.connected,sc1_0.provider,sc1_0.provider_user_id,sc1_0.refresh_token,sc1_0.token_expiry,sc1_0.user_id,sc1_0.username from social_connections sc1_0 where sc1_0.user_id=?
+2025-02-07 15:57:31,718 DEBUG c.w.g.c.UserController [http-nio-8082-exec-6] Dashboard loaded with 3 social connections
+2025-02-07 15:57:31,721 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-6] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:57:31,743 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-6] Completed 200 OK
+2025-02-07 15:57:31,763 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Securing GET /css/styles.css
+2025-02-07 15:57:31,764 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Secured GET /css/styles.css
+2025-02-07 15:57:31,765 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-2] GET "/css/styles.css", parameters={}
+2025-02-07 15:57:31,767 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-2] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:57:31,771 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-2] Completed 200 OK
+2025-02-07 15:57:31,772 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-2] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C6AF3AC96C0CEC669FED00A85140596A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:57:36,280 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-8] Securing GET /oauth2/authorization/linkedin
+2025-02-07 15:57:36,292 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-8] Redirecting to https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77kblbid9qec8e&scope=r_liteprofile%20r_emailaddress&state=jFJB5kZW3eVxL7qRqreF4qgghpUmny16VVjzeTa_r_8%3D&redirect_uri=http://localhost:8082/oauth2/callback/linkedin
+2025-02-07 15:57:42,446 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Securing GET /oauth2/callback/linkedin?error=unauthorized_scope_error&error_description=Scope+%26quot%3Br_emailaddress%26quot%3B+is+not+authorized+for+your+application&state=jFJB5kZW3eVxL7qRqreF4qgghpUmny16VVjzeTa_r_8%3D
+2025-02-07 15:57:42,447 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Secured GET /oauth2/callback/linkedin?error=unauthorized_scope_error&error_description=Scope+%26quot%3Br_emailaddress%26quot%3B+is+not+authorized+for+your+application&state=jFJB5kZW3eVxL7qRqreF4qgghpUmny16VVjzeTa_r_8%3D
+2025-02-07 15:57:42,448 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-7] GET "/oauth2/callback/linkedin?error=unauthorized_scope_error&error_description=Scope+%26quot%3Br_emailaddress%26quot%3B+is+not+authorized+for+your+application&state=jFJB5kZW3eVxL7qRqreF4qgghpUmny16VVjzeTa_r_8%3D", parameters={masked}
+2025-02-07 15:57:42,452 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:57:42,454 DEBUG o.s.w.s.r.ResourceHttpRequestHandler [http-nio-8082-exec-7] Resource not found
+2025-02-07 15:57:42,458 DEBUG o.s.w.s.m.s.DefaultHandlerExceptionResolver [http-nio-8082-exec-7] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource oauth2/callback/linkedin.]
+2025-02-07 15:57:42,460 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-7] Completed 404 NOT_FOUND
+2025-02-07 15:57:42,461 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-7] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C6AF3AC96C0CEC669FED00A85140596A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:57:42,469 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Securing GET /error?error=unauthorized_scope_error&error_description=Scope+%26quot%3Br_emailaddress%26quot%3B+is+not+authorized+for+your+application&state=jFJB5kZW3eVxL7qRqreF4qgghpUmny16VVjzeTa_r_8%3D
+2025-02-07 15:57:42,471 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-7] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C6AF3AC96C0CEC669FED00A85140596A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:57:42,472 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Secured GET /error?error=unauthorized_scope_error&error_description=Scope+%26quot%3Br_emailaddress%26quot%3B+is+not+authorized+for+your+application&state=jFJB5kZW3eVxL7qRqreF4qgghpUmny16VVjzeTa_r_8%3D
+2025-02-07 15:57:42,473 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-7] "ERROR" dispatch for GET "/error?error=unauthorized_scope_error&error_description=Scope+%26quot%3Br_emailaddress%26quot%3B+is+not+authorized+for+your+application&state=jFJB5kZW3eVxL7qRqreF4qgghpUmny16VVjzeTa_r_8%3D", parameters={masked}
+2025-02-07 15:57:42,475 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-7] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2025-02-07 15:57:42,488 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-7] Selected 'text/html' given [text/html, text/html;q=0.8]
+2025-02-07 15:57:42,496 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-7] Exiting from "ERROR" dispatch, status 404
+2025-02-07 15:58:04,081 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-9] Securing GET /dashboard?continue
+2025-02-07 15:58:04,082 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-9] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C6AF3AC96C0CEC669FED00A85140596A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:58:04,083 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-9] Secured GET /dashboard?continue
+2025-02-07 15:58:04,084 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-9] GET "/dashboard?continue", parameters={masked}
+2025-02-07 15:58:04,085 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-9] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 15:58:04,087 DEBUG c.w.g.c.UserController [http-nio-8082-exec-9] Loading dashboard for user: dhk
+2025-02-07 15:58:04,088 DEBUG c.w.g.s.UserService [http-nio-8082-exec-9] Fetching user by username: dhk
+2025-02-07 15:58:04,090 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-9] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 15:58:04,094 DEBUG c.w.g.s.SocialConnectionService [http-nio-8082-exec-9] Getting formatted social connections for user: dhk
+2025-02-07 15:58:04,097 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-9] select sc1_0.id,sc1_0.access_token,sc1_0.connected,sc1_0.provider,sc1_0.provider_user_id,sc1_0.refresh_token,sc1_0.token_expiry,sc1_0.user_id,sc1_0.username from social_connections sc1_0 where sc1_0.user_id=?
+2025-02-07 15:58:04,099 DEBUG c.w.g.c.UserController [http-nio-8082-exec-9] Dashboard loaded with 3 social connections
+2025-02-07 15:58:04,102 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-9] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 15:58:04,108 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-9] Completed 200 OK
+2025-02-07 15:58:04,121 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-10] Securing GET /css/styles.css
+2025-02-07 15:58:04,122 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-10] Secured GET /css/styles.css
+2025-02-07 15:58:04,123 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-10] GET "/css/styles.css", parameters={}
+2025-02-07 15:58:04,125 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-10] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 15:58:04,129 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-10] Completed 200 OK
+2025-02-07 15:58:04,130 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-10] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=C6AF3AC96C0CEC669FED00A85140596A], Granted Authorities=[ROLE_USER]]]
+2025-02-07 15:58:05,985 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-1] Securing GET /oauth2/authorization/google
+2025-02-07 15:58:05,988 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-1] Redirecting to https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=$%7B21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com%7D&scope=email%20profile%20openid&state=dx7eVT6LuAlBztheAwmxhPX5OFaphKKEoNjW4binxAs%3D&redirect_uri=http://localhost:8082/login/oauth2/code/google&nonce=F90cv9QT_bCUg-HLkzWPPmQtk_Y6D89e3dwo-Z3ooKc
+2025-02-07 16:15:15,540 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 16:15:15,598 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 7992 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 16:15:15,600 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 16:15:15,602 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 16:15:16,658 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 16:15:16,756 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 86 ms. Found 2 JPA repository interfaces.
+2025-02-07 16:15:17,534 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-02-07 16:15:17,547 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-02-07 16:15:17,550 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 16:15:17,550 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 16:15:17,629 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 16:15:17,631 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1972 ms
+2025-02-07 16:15:17,830 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 16:15:17,906 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 16:15:17,977 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 16:15:18,472 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 16:15:18,508 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 16:15:18,731 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@699e0bf0
+2025-02-07 16:15:18,734 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 16:15:18,785 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 16:15:19,797 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 16:15:19,889 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 16:15:20,356 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 16:15:20,361 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 16:15:20,383 DEBUG c.w.g.c.SecurityConfig [main] Creating AuthenticationManager
+2025-02-07 16:15:20,406 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 16:15:20,555 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 16:15:20,770 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 9 mappings in 'requestMappingHandlerMapping'
+2025-02-07 16:15:20,908 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 16:15:20,926 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 16:15:20,931 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 16:15:20,949 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 16:15:20,959 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 16:15:20,965 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 16:15:20,966 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 16:15:20,968 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 16:15:21,043 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@701da311, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4fe9fb65, org.springframework.security.web.context.SecurityContextHolderFilter@4f3b11e6, org.springframework.security.web.header.HeaderWriterFilter@7212b28e, org.springframework.web.filter.CorsFilter@5de14222, org.springframework.security.web.authentication.logout.LogoutFilter@7f65639e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@732bb49d, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@434a2a10, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68908be7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c928399, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bcca516, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fb51e17, org.springframework.security.web.access.ExceptionTranslationFilter@6e7d9d0, org.springframework.security.web.access.intercept.AuthorizationFilter@df5f657]
+2025-02-07 16:15:21,154 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 16:15:21,189 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 16:15:21,336 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-02-07 16:15:21,361 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2025-02-07 16:15:21,374 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 6.393 seconds (process running for 6.766)
+2025-02-07 16:15:21,544 INFO o.a.j.l.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-07 16:15:21,545 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-07 16:15:21,546 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected StandardServletMultipartResolver
+2025-02-07 16:15:21,546 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected AcceptHeaderLocaleResolver
+2025-02-07 16:15:21,547 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected FixedThemeResolver
+2025-02-07 16:15:21,548 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@31dbca5d
+2025-02-07 16:15:21,550 DEBUG o.s.w.s.DispatcherServlet [http-nio-8082-exec-1] Detected org.springframework.web.servlet.support.SessionFlashMapManager@50b78155
+2025-02-07 16:15:21,551 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-02-07 16:15:21,552 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 7 ms
+2025-02-07 16:15:21,576 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-1] Securing GET /
+2025-02-07 16:15:21,588 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 16:15:21,641 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8082-exec-1] Saved request http://localhost:8082/?continue to session
+2025-02-07 16:15:21,645 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8082-exec-1] Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@729d1428, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]
+2025-02-07 16:15:21,648 DEBUG o.s.s.w.a.DelegatingAuthenticationEntryPoint [http-nio-8082-exec-1] Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@609edb55
+2025-02-07 16:15:21,649 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-1] Redirecting to http://localhost:8082/login
+2025-02-07 16:15:21,657 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Securing GET /login
+2025-02-07 16:15:21,658 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-2] Secured GET /login
+2025-02-07 16:15:21,661 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-2] GET "/login", parameters={}
+2025-02-07 16:15:21,663 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-2] Mapped to com.whilter.genai.controller.UserController#login(String, Model)
+2025-02-07 16:15:21,695 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-2] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 16:15:21,978 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-2] Completed 200 OK
+2025-02-07 16:15:21,979 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 16:15:21,989 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Securing GET /css/styles.css
+2025-02-07 16:15:21,990 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-5] Secured GET /css/styles.css
+2025-02-07 16:15:21,991 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-5] GET "/css/styles.css", parameters={}
+2025-02-07 16:15:21,992 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-5] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 16:15:22,005 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-5] Completed 200 OK
+2025-02-07 16:15:22,005 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-8082-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2025-02-07 16:15:37,355 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-4] Securing POST /login
+2025-02-07 16:15:37,627 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-4] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 16:15:37,713 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-8082-exec-4] Authenticated user
+2025-02-07 16:15:37,715 DEBUG o.s.s.w.a.s.AbstractSessionFixationProtectionStrategy [http-nio-8082-exec-4] Changed session id from B52FC4BBD164DB916E2333BCAB4281A4
+2025-02-07 16:15:37,717 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-4] Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B52FC4BBD164DB916E2333BCAB4281A4], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@1dd2f543]
+2025-02-07 16:15:37,718 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8082-exec-4] Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B52FC4BBD164DB916E2333BCAB4281A4], Granted Authorities=[ROLE_USER]]
+2025-02-07 16:15:37,719 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-4] Redirecting to http://localhost:8082/?continue
+2025-02-07 16:15:37,724 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Securing GET /?continue
+2025-02-07 16:15:37,726 DEBUG o.s.s.w.s.HttpSessionRequestCache [http-nio-8082-exec-6] Loaded matching saved request http://localhost:8082/?continue
+2025-02-07 16:15:37,728 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-6] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B52FC4BBD164DB916E2333BCAB4281A4], Granted Authorities=[ROLE_USER]]]
+2025-02-07 16:15:37,729 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-6] Secured GET /?continue
+2025-02-07 16:15:37,731 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-6] GET "/?continue", parameters={masked}
+2025-02-07 16:15:37,732 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-6] Mapped to com.whilter.genai.controller.UserController#home()
+2025-02-07 16:15:37,736 DEBUG o.s.w.s.v.AbstractView [http-nio-8082-exec-6] View name 'redirect:', model {}
+2025-02-07 16:15:37,738 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-6] Completed 302 FOUND
+2025-02-07 16:15:37,743 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Securing GET /dashboard
+2025-02-07 16:15:37,745 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-3] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B52FC4BBD164DB916E2333BCAB4281A4], Granted Authorities=[ROLE_USER]]]
+2025-02-07 16:15:37,746 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-3] Secured GET /dashboard
+2025-02-07 16:15:37,747 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-3] GET "/dashboard", parameters={}
+2025-02-07 16:15:37,748 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-3] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 16:15:37,749 DEBUG c.w.g.c.UserController [http-nio-8082-exec-3] Loading dashboard for user: dhk
+2025-02-07 16:15:37,759 DEBUG c.w.g.s.UserService [http-nio-8082-exec-3] Fetching user by username: dhk
+2025-02-07 16:15:37,762 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-3] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 16:15:37,771 DEBUG c.w.g.s.SocialConnectionService [http-nio-8082-exec-3] Getting formatted social connections for user: dhk
+2025-02-07 16:15:37,784 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-3] select sc1_0.id,sc1_0.access_token,sc1_0.connected,sc1_0.provider,sc1_0.provider_user_id,sc1_0.refresh_token,sc1_0.token_expiry,sc1_0.user_id,sc1_0.username from social_connections sc1_0 where sc1_0.user_id=?
+2025-02-07 16:15:37,791 DEBUG c.w.g.c.UserController [http-nio-8082-exec-3] Dashboard loaded with 3 social connections
+2025-02-07 16:15:37,795 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-3] Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-02-07 16:15:37,824 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-3] Completed 200 OK
+2025-02-07 16:15:37,847 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Securing GET /css/styles.css
+2025-02-07 16:15:37,849 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-7] Secured GET /css/styles.css
+2025-02-07 16:15:37,851 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-7] GET "/css/styles.css", parameters={}
+2025-02-07 16:15:37,852 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-7] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-02-07 16:15:37,857 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-7] Completed 200 OK
+2025-02-07 16:15:37,858 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-7] Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=dhk, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=B52FC4BBD164DB916E2333BCAB4281A4], Granted Authorities=[ROLE_USER]]]
+2025-02-07 16:15:44,668 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-8] Securing GET /oauth2/authorization/google
+2025-02-07 16:15:44,683 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-8] Redirecting to https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com&scope=email%20profile%20openid&state=CqDA2qxI_FO_Gh8JWXQnebYiG70do3s6AzgRm6on7rc%3D&redirect_uri=http://localhost:8082/oauth2/callback/google&nonce=VRdN84cXWBES2VnKdtRepvqWTldXseyLq85X3rWyR98
+2025-02-07 16:15:50,725 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-9] Securing GET /oauth2/callback/google?state=CqDA2qxI_FO_Gh8JWXQnebYiG70do3s6AzgRm6on7rc%3D&code=4%2F0ASVgi3JPt8Q6v4ACR1Dx0jLt3QSmXBIk6suH15PscEIFmoeb4lCi9DqguHj6MPwNuzAEYA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=2&prompt=none
+2025-02-07 16:15:50,843 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] HTTP POST https://oauth2.googleapis.com/token
+2025-02-07 16:15:50,861 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] Accept=[application/json, application/*+json]
+2025-02-07 16:15:50,863 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] Writing [{grant_type=[authorization_code], code=[4/0ASVgi3JPt8Q6v4ACR1Dx0jLt3QSmXBIk6suH15PscEIFmoeb4lCi9DqguHj6MPwNuzAEYA], redirect_uri=[http://localhost:8082/oauth2/callback/google]}] as "application/x-www-form-urlencoded;charset=UTF-8"
+2025-02-07 16:15:51,426 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] Response 200 OK
+2025-02-07 16:15:51,430 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] Reading to [org.springframework.security.oauth2.core.endpoint.OAuth2AccessTokenResponse] as "application/json;charset=utf-8"
+2025-02-07 16:15:51,556 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] HTTP GET https://www.googleapis.com/oauth2/v3/certs
+2025-02-07 16:15:51,557 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] Accept=[text/plain, application/json, application/*+json, */*]
+2025-02-07 16:15:51,858 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] Response 200 OK
+2025-02-07 16:15:51,858 DEBUG o.s.c.l.CompositeLog [http-nio-8082-exec-9] Reading to [java.lang.String] as "application/json;charset=UTF-8"
+2025-02-07 16:15:51,885 DEBUG o.s.s.w.a.s.AbstractSessionFixationProtectionStrategy [http-nio-8082-exec-9] Changed session id from 4318524ACCD9800521D373B7C9959BF1
+2025-02-07 16:15:51,886 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-9] Stored SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115146172594575430957], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=ciiQhCnvHQcxgfcSVwsrNQ, sub=115146172594575430957, email_verified=true, iss=https://accounts.google.com, given_name=Dharmendra, nonce=VRdN84cXWBES2VnKdtRepvqWTldXseyLq85X3rWyR98, picture=https://lh3.googleusercontent.com/a/ACg8ocKkQa0qUELc6hMFg0hqu54T_QB6mSZtIla007YEKt8YSBFDaw=s96-c, aud=[21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com], azp=21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com, name=Dharmendra Kumar, exp=2025-02-07T11:45:51Z, family_name=Kumar, iat=2025-02-07T10:45:51Z, email=dhk07work@gmail.com}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4318524ACCD9800521D373B7C9959BF1], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@1dd2f543]
+2025-02-07 16:15:51,887 DEBUG o.s.s.w.a.AbstractAuthenticationProcessingFilter [http-nio-8082-exec-9] Set SecurityContextHolder to OAuth2AuthenticationToken [Principal=Name: [115146172594575430957], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=ciiQhCnvHQcxgfcSVwsrNQ, sub=115146172594575430957, email_verified=true, iss=https://accounts.google.com, given_name=Dharmendra, nonce=VRdN84cXWBES2VnKdtRepvqWTldXseyLq85X3rWyR98, picture=https://lh3.googleusercontent.com/a/ACg8ocKkQa0qUELc6hMFg0hqu54T_QB6mSZtIla007YEKt8YSBFDaw=s96-c, aud=[21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com], azp=21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com, name=Dharmendra Kumar, exp=2025-02-07T11:45:51Z, family_name=Kumar, iat=2025-02-07T10:45:51Z, email=dhk07work@gmail.com}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4318524ACCD9800521D373B7C9959BF1], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]
+2025-02-07 16:15:51,888 DEBUG c.w.g.c.OAuth2LoginSuccessHandler [http-nio-8082-exec-9] OAuth2 login successful for user: 115146172594575430957
+2025-02-07 16:15:51,890 DEBUG o.s.s.w.DefaultRedirectStrategy [http-nio-8082-exec-9] Redirecting to /dashboard
+2025-02-07 16:15:51,895 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-10] Securing GET /dashboard
+2025-02-07 16:15:51,896 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-10] Retrieved SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115146172594575430957], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=ciiQhCnvHQcxgfcSVwsrNQ, sub=115146172594575430957, email_verified=true, iss=https://accounts.google.com, given_name=Dharmendra, nonce=VRdN84cXWBES2VnKdtRepvqWTldXseyLq85X3rWyR98, picture=https://lh3.googleusercontent.com/a/ACg8ocKkQa0qUELc6hMFg0hqu54T_QB6mSZtIla007YEKt8YSBFDaw=s96-c, aud=[21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com], azp=21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com, name=Dharmendra Kumar, exp=2025-02-07T11:45:51Z, family_name=Kumar, iat=2025-02-07T10:45:51Z, email=dhk07work@gmail.com}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4318524ACCD9800521D373B7C9959BF1], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]]
+2025-02-07 16:15:51,898 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-10] Secured GET /dashboard
+2025-02-07 16:15:51,899 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-10] GET "/dashboard", parameters={}
+2025-02-07 16:15:51,900 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-10] Mapped to com.whilter.genai.controller.UserController#dashboard(Model)
+2025-02-07 16:15:51,901 DEBUG c.w.g.c.UserController [http-nio-8082-exec-10] Loading dashboard for user: 115146172594575430957
+2025-02-07 16:15:51,902 DEBUG c.w.g.s.UserService [http-nio-8082-exec-10] Fetching user by username: 115146172594575430957
+2025-02-07 16:15:51,905 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8082-exec-10] select u1_0.id,u1_0.created_date,u1_0.date_of_birth,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.mobile_number,u1_0.password,u1_0.username from users u1_0 where u1_0.username=?
+2025-02-07 16:15:51,907 ERROR c.w.g.s.UserService [http-nio-8082-exec-10] User not found with username: 115146172594575430957
+2025-02-07 16:15:51,912 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-10] Failed to complete request: java.lang.RuntimeException: User not found
+2025-02-07 16:15:51,914 ERROR o.a.j.l.DirectJDKLog [http-nio-8082-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.RuntimeException: User not found] with root cause
+java.lang.RuntimeException: User not found
+	at com.whilter.genai.service.UserService.lambda$getUserByUsername$0(UserService.java:58)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.whilter.genai.service.UserService.getUserByUsername(UserService.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at com.whilter.genai.service.UserService$$SpringCGLIB$$0.getUserByUsername(<generated>)
+	at com.whilter.genai.controller.UserController.dashboard(UserController.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:259)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:192)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:920)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:830)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:181)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2025-02-07 16:15:51,939 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-10] Securing GET /error
+2025-02-07 16:15:51,940 DEBUG o.s.s.w.c.HttpSessionSecurityContextRepository [http-nio-8082-exec-10] Retrieved SecurityContextImpl [Authentication=OAuth2AuthenticationToken [Principal=Name: [115146172594575430957], Granted Authorities: [[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]], User Attributes: [{at_hash=ciiQhCnvHQcxgfcSVwsrNQ, sub=115146172594575430957, email_verified=true, iss=https://accounts.google.com, given_name=Dharmendra, nonce=VRdN84cXWBES2VnKdtRepvqWTldXseyLq85X3rWyR98, picture=https://lh3.googleusercontent.com/a/ACg8ocKkQa0qUELc6hMFg0hqu54T_QB6mSZtIla007YEKt8YSBFDaw=s96-c, aud=[21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com], azp=21525619121-9egnu431crq71e9rjjlpvnrbur98lal0.apps.googleusercontent.com, name=Dharmendra Kumar, exp=2025-02-07T11:45:51Z, family_name=Kumar, iat=2025-02-07T10:45:51Z, email=dhk07work@gmail.com}], Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=4318524ACCD9800521D373B7C9959BF1], Granted Authorities=[OIDC_USER, SCOPE_https://www.googleapis.com/auth/userinfo.email, SCOPE_https://www.googleapis.com/auth/userinfo.profile, SCOPE_openid]]]
+2025-02-07 16:15:51,942 DEBUG o.s.s.w.FilterChainProxy [http-nio-8082-exec-10] Secured GET /error
+2025-02-07 16:15:51,943 DEBUG o.s.c.l.LogFormatUtils [http-nio-8082-exec-10] "ERROR" dispatch for GET "/error", parameters={}
+2025-02-07 16:15:51,945 DEBUG o.s.w.s.h.AbstractHandlerMapping [http-nio-8082-exec-10] Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2025-02-07 16:15:51,956 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver [http-nio-8082-exec-10] Selected 'text/html' given [text/html, text/html;q=0.8]
+2025-02-07 16:15:51,962 DEBUG o.s.w.s.FrameworkServlet [http-nio-8082-exec-10] Exiting from "ERROR" dispatch, status 500
+2025-02-07 16:38:32,223 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-02-07 16:38:32,287 INFO o.s.b.StartupInfoLogger [main] Starting SocialConnectorApplication using Java 17.0.7 with PID 4268 (C:\Users\racloop\workspace_nonGit\social-connector\target\classes started by racloop in C:\Users\racloop\workspace_nonGit\social-connector)
+2025-02-07 16:38:32,289 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-02-07 16:38:32,290 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-07 16:38:33,543 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-07 16:38:33,658 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2025-02-07 16:38:34,491 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-02-07 16:38:34,506 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-02-07 16:38:34,510 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-07 16:38:34,512 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-02-07 16:38:34,587 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-07 16:38:34,589 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2241 ms
+2025-02-07 16:38:34,793 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-07 16:38:34,871 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-02-07 16:38:34,929 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-02-07 16:38:35,276 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-07 16:38:35,317 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2025-02-07 16:38:35,559 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36d697ab
+2025-02-07 16:38:35,562 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-02-07 16:38:35,600 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-07 16:38:36,703 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-02-07 16:38:36,794 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-07 16:38:37,367 DEBUG c.w.g.c.SecurityConfig [main] Initializing SecurityConfig with UserDetailsService: class com.whilter.genai.service.CustomUserDetailsService
+2025-02-07 16:38:37,376 DEBUG c.w.g.c.SecurityConfig [main] Creating BCryptPasswordEncoder
+2025-02-07 16:38:37,402 DEBUG c.w.g.c.SecurityConfig [main] Creating AuthenticationManager
+2025-02-07 16:38:37,424 DEBUG c.w.g.c.SecurityConfig [main] Creating DaoAuthenticationProvider
+2025-02-07 16:38:37,568 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-07 16:38:37,739 DEBUG o.s.w.s.h.AbstractHandlerMethodMapping [main] 9 mappings in 'requestMappingHandlerMapping'
+2025-02-07 16:38:37,846 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-02-07 16:38:37,861 DEBUG c.w.g.c.SecurityConfig [main] Configuring SecurityFilterChain
+2025-02-07 16:38:37,863 DEBUG c.w.g.c.SecurityConfig [main] CSRF disabled
+2025-02-07 16:38:37,879 DEBUG c.w.g.c.SecurityConfig [main] Configured authorization rules
+2025-02-07 16:38:37,890 DEBUG c.w.g.c.SecurityConfig [main] Configured form login
+2025-02-07 16:38:37,895 DEBUG c.w.g.c.SecurityConfig [main] Configured OAuth2 login
+2025-02-07 16:38:37,896 DEBUG c.w.g.c.SecurityConfig [main] Configured logout handling
+2025-02-07 16:38:37,897 INFO c.w.g.c.SecurityConfig [main] Security configuration completed successfully
+2025-02-07 16:38:37,979 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5de14222, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fb51e17, org.springframework.security.web.context.SecurityContextHolderFilter@7c928399, org.springframework.security.web.header.HeaderWriterFilter@87df88d, org.springframework.web.filter.CorsFilter@722d3ddb, org.springframework.security.web.authentication.logout.LogoutFilter@4cf1ec2, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@19a4cdea, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@701da311, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2662e3ff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cef23a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@762d2e4c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@721fc228, org.springframework.security.web.access.ExceptionTranslationFilter@7212b28e, org.springframework.security.web.access.intercept.AuthorizationFilter@1aba8978]
+2025-02-07 16:38:38,109 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-02-07 16:38:38,141 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-02-07 16:38:38,284 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-02-07 16:38:38,307 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path ''
+2025-02-07 16:38:38,320 INFO o.s.b.StartupInfoLogger [main] Started SocialConnectorApplication in 6.671 seconds (process running for 7.043)
